@@ -1,0 +1,15 @@
+<H1 align ="center">WordCount</H1>
+<h3>Our Text</h3>
+{{text}}
+<br>
+<br>
+<a href ="{% url 'homepage' %}">click here to retry</a>
+<h3>Total Word Count</h3>
+{{res}}
+<br>
+<br>
+<h3>Each word and its count</h3>
+{% for words, counteach in sortedwords %}
+    {{words}} : {{counteach}}
+    <br>
+{% endfor %}

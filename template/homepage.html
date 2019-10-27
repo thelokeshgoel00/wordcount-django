@@ -1,0 +1,16 @@
+<h1 align = 'center'>
+    My First Django Website
+</h1>
+<h2><a href="{% url 'about' %}">About Us</a></h2>
+<center>
+
+    <h3>
+        Wordcount
+    </h3>
+    <form action="{% url 'count' %}" method="get">
+        <textarea rows=10 cols=50 name="mainarea" value="mainarea"></textarea>
+        <br>
+        <button type="submit" name="submit" value ="submit">Submit</button>
+
+    </form>
+</center>
